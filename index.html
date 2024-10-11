@@ -1,27 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Reparacion de su computadora</title>
-    <link rel="stylesheet" href="css/estilos.css">
-
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu Dropdown con CSS3 y HTML5</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-    <input type="checkbox" class="toggle-check" id="toggle" hidden>
-    <label class="toggle" for="toggle">Menu</label>
-    <div class="container-menu">
-        <nav class="menu">
-            <a href="inicio.html" class="item">Inicio</a>
-            <a href="tutoriales.html" class="item">Tutoriales</a>
-            <a href="servicios.html" class="item">Servicios</a>
-            <a href="contacto.html" class="item">Contactos</a>
-        </nav>
-    </div>
-
+    <nav class="barra">
+        <ul class="navegacion">
+            <li class="enlace" id="perfil">
+                <a href="#perfil" class="padre">
+                    <i class="far fa-user"></i>Mi Perfil
+                </a>
+                <div class="submenu">
+                    <a href="inicio.html">Inicio</a>
+                    <a href="servicios.html">Servicios</a>
+                    <a href="tutoriales.html">Tutoriales</a>
+                </div>
+            </li>
+            <li class="enlace" id="mensajes">
+                <a href="#mensajes" class="padre">
+                    <i class="far fa-envelope"></i>Mensajes
+                </a>
+                <div class="submenu">
+                    <a href="contacto.html">Contactos</a>
+                    <a href="#">Redactar</a>
+                </div>
+            </li>
+            <li class="enlace" id="grupos">
+                <a href="#grupos" class="padre">
+                    <i class="fas fa-users"></i>Grupos
+                </a>
+                <div class="submenu">
+                    <a href="#">Ver Todos</a>
+                    <a href="#">Buscar</a>
+                </div>
+            </li>
+            <li class="enlace" id="preferencias">
+                <a href="#preferencias" class="padre">
+                    <i class="far fa-envelope"></i>Preferencias
+                </a>
+                <div class="submenu">
+                    <a href="#">Configuración</a>
+                    <a href="#">Lenguaje</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    
 </body>
-
 </html>
